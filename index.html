@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Alberto Drake">
+  <meta property="og:description" content="Alberto Drake - Programmer & Ethical Hacker">
+  <meta property="og:url" content="https://github.com/AlbertoDrake">
+  <meta property="og:image" content="assets/Draken.png">
+  <meta name="theme-color" content="#a020f0">
+  <meta name="robots" content="INDEX, FOLLOW">
+  <link rel="stylesheet" href="style.css" />
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/Draken.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css"
+    integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw=="
+    crossorigin="anonymous" />
+  <title>Alberto Drake</title>
+  <style>
+    body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body id="top" oncontextmenu="return false">
+
+  <div class="music-player">
+    <div class="player-content">
+      <div class="player-controls">
+        <div class="control-btn" id="prev-btn">
+          <i class="fas fa-backward"></i>
+        </div>
+        <div class="play-btn" id="play-btn">
+          <i class="fas fa-play"></i>
+        </div>
+        <div class="control-btn" id="next-btn">
+          <i class="fas fa-forward"></i>
+        </div>
+      </div>
+
+      <div class="wave-visualizer" id="wave-visualizer">
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+      </div>
+
+      <div class="track-info">
+        <div class="track-title" id="track-title">Loading...</div>
+        <div class="track-artist" id="track-artist">Select a track</div>
+      </div>
+      <div class="volume-container">
+        <i class="fas fa-volume-up" id="volume-icon"></i>
+        <input type="range" min="0" max="100" value="50" class="volume-slider" id="volume-slider">
+      </div>
+    </div>
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+    <audio id="audio-player"></audio>
+  </div>
+
+  <section id="hero" class="s-home target-section">
+    <div class="shadow-overlay" id="wave"></div>
+    <div class="home-content">
+      <div class="row home-content__main" style="justify-content: center; align-items: center; display: flex;">
+        <main>
+          <div class="mainCard" data-tilt>
+            <div class="header">
+              <div class="logo" data-tilt>
+                <img src="assets/Draken.png" alt="Logo" />
+              </div>
+              <div class="name">
+                <h1>Alberto Drake</h1>
+              </div>
+              <div class="subtitle">Programmer | Ethical Hacker | Developer</div>
+              <div class="lower" data-tilt>
+                <div class="text1">
+                  <p>Hey I'm Alberto Drake 👋
+                    <br> Passionate Programmer & Ethical Hacker.
+                    <br>
+                    <br> Specializing in Cybersecurity, Penetration Testing,
+                    <br> and Full-Stack Development.
+                    <br>
+                  </p>
+                </div>
+
+                <div class="social">
+                  <a href="https://discord.com/users/809729227964284959" id="discord" target="_blank"><i
+                      class="fab fa-discord"></i></a>
+                  <a href="https://github.com/AlbertoDrake" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.youtube.com/channel/UCn6UoZ3JoZmA5wOQoBHu1SA" id="youtube" target="_blank"><i
+                      class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <div class="buttons">
+                  <!-- <a href="https://discord.com/users/745732703424348169" target="_blank">Discord</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+  <!--       <footer id="footer">
+
+        <div class="container d-md-flex py-4">
+      
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright. All Rights Reserved
+            </div>
+            <div class="credits">
+              Developed by <a href="https://github.com/Alpha1005" target="_blank">Alpha_1005</a>
+            </div>
+          </div>
+          <div class="social-links text-center text-md-end pt-3 pt-md-0">
+            <a href="https://twitter.com/Alpha1005_" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="https://github.com/Alpha1005" class="discord" target="_blank"><i class="bx bxl-discord"></i></a>
+          </div>
+        </div>
+      </footer> -->
+
+  <script src="assets/vanilla_tilt.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.3/dist/aos.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.96.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.96.0/examples/js/renderers/CanvasRenderer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.96.0/examples/js/renderers/Projector.js"></script>
+  <script src="https://kit.fontawesome.com/a1fd1358c5.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script defer data-project="667b8ef32e282316a8b2d568"
+    src="https://cdn.jsdelivr.net/gh/litlyx/litlyx-js/browser/litlyx.js"></script>
+  <script type="text/javascript">
+    document.onkeydown = function (e) {
+      e = e || window.event;
+      if (e.ctrlKey) {
+        var c = e.which || e.keyCode;
+        switch (c) {
+          case 83:
+          case 85:
+          case 65:
+          case 73:
+            e.preventDefault();
+            e.stopPropagation();
+            break;
+        }
+      }
+    };
+
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    }, false);
+  </script>
+</body>
+
+</html>
