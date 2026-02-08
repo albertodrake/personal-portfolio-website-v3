@@ -62,7 +62,7 @@ const songs = [
 
 ## 🔗 Connect with Alberto Drake
 
--   **Discord**: [Join Server](https://discord.com/users/809729227964284959)
+-   **Discord**: [DM Me❤️](https://discord.com/users/809729227964284959)
 -   **YouTube**: [Subscribe](https://www.youtube.com/channel/UCn6UoZ3JoZmA5wOQoBHu1SA)
 -   **GitHub**: [Follow](https://github.com/AlbertoDrake)
 
